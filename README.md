@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="img/logo.png" target="_blank">
-    <img src="img/logo.png" alt="docking-ai logo" width="650">
+    <img src="img/logo.png" alt="docking-ai logo" width="600">
   </a>
 </p>
 <p align="center"><sub>Click the logo to view full size</sub></p>
