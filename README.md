@@ -13,7 +13,7 @@ AutoDock Vina docking integration, built as a single local pipeline:
 SMILES --RDKit--> molecular graph --GNN--> predicted score --rank--> top-K --Vina--> docking pose
 ```
 
-<p align="center">
+<p align="left">
   <a href="img/pepline.png" target="_blank">
     <img src="img/pepline.png" alt="docking-ai pipeline" width="900">
   </a>
