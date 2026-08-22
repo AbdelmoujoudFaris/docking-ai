@@ -1,11 +1,15 @@
 # docking-ai
 
+![docking-ai logo](img/logo.png)
+
 RDKit + GNN molecular property prediction, AI-driven virtual screening, and an
 AutoDock Vina docking integration, built as a single local pipeline:
 
 ```
 SMILES --RDKit--> molecular graph --GNN--> predicted score --rank--> top-K --Vina--> docking pose
 ```
+
+![docking-ai pipeline](img/pepline.png)
 
 ## Project layout
 
