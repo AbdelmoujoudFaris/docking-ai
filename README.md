@@ -29,6 +29,7 @@ Pytroch/
     screening/screen.py    GNN-ranked virtual screening, optional Vina re-scoring of top-K
     explain/gnn_explain.py  gradient and occlusion atom-importance + 2D rendering
   tests/                  pytest suite (28 tests, one per module/behavior)
+  examples/               runnable, no-download-needed demo scripts (see examples/README.md)
   configs/default.yaml    documents TrainConfig fields for config-file-driven runs
   data/                   raw/processed data (empty; see "Using real data" below)
   outputs/                logs, checkpoints, docking/screening/explain artifacts (gitignored)
@@ -64,6 +65,10 @@ cd C:\Users\faris-c\Documents\APK\Pytroch
 # train a model on the bundled example dataset (regression on synthetic_score)
 .\.venv\Scripts\python.exe -m docking_ai.training.train
 ```
+
+Runnable, no-download-needed demos for every stage (training, evaluation,
+screening, explainability, ligand prep) live in `examples/` -- see
+`examples/README.md`.
 
 For evaluation / screening / explainability, use the library from a script or
 notebook, e.g.:
@@ -185,7 +190,7 @@ methods including image rendering.
 
 ## Files to commit to GitHub vs. keep local
 
-Commit: everything under `src/`, `tests/`, `configs/`, `pyproject.toml`,
+Commit: everything under `src/`, `tests/`, `examples/`, `configs/`, `pyproject.toml`,
 `requirements.txt`, `environment.yml`, `.gitignore`, `README.md`, and the
 `.gitkeep` placeholders under `data/`.
 
