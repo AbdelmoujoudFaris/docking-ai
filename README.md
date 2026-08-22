@@ -1,6 +1,6 @@
 # docking-ai
 
-<p align="center">
+<p align="right">
   <a href="img/logo.png" target="_blank">
     <img src="img/logo.png" alt="docking-ai logo" width="600">
   </a>
