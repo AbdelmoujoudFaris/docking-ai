@@ -5,7 +5,6 @@
     <img src="img/logo.png" alt="docking-ai logo" width="400">
   </a>
 </p>
-<p align="center"><sub>Click the logo to view full size</sub></p>
 
 RDKit + GNN molecular property prediction, AI-driven virtual screening, and an
 AutoDock Vina docking integration, built as a single local pipeline:
