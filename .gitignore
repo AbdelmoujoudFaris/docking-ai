@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# generated outputs (logs, checkpoints, docking results) -- keep the repo
+# itself free of run artifacts and any local/real research data
+outputs/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+.pytest_cache/
+.ipynb_checkpoints/

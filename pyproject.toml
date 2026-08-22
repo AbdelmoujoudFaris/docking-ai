@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docking-ai"
+version = "0.1.0"
+description = "RDKit + GNN molecular property prediction, AI virtual screening, and AutoDock Vina docking integration"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "numpy",
+    "pandas",
+    "rdkit",
+    "torch",
+    "scikit-learn",
+    "matplotlib",
+    "networkx",
+    "meeko",
+    "pyyaml",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

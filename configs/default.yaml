@@ -1,0 +1,26 @@
+# Default configuration for docking_ai training runs.
+# Not auto-loaded by any code path yet -- training/train.py's TrainConfig
+# dataclass is the source of truth; this file documents the same fields for
+# users who want to drive runs from a config file (e.g. via a small custom
+# script that does `TrainConfig(**yaml.safe_load(open(path)))`).
+
+task: regression          # "regression" or "classification"
+label_col: synthetic_score  # or "synthetic_active" for the classification demo
+hidden_dim: 64
+num_layers: 3
+dropout: 0.1
+lr: 0.001
+weight_decay: 0.00001
+batch_size: 16
+max_epochs: 200
+patience: 25
+seed: 42
+device: cpu
+run_name: gnn_run
+
+docking:
+  # AutoDock Vina executable. Leave as "vina" to search PATH, or set an
+  # absolute path. Can also be overridden via the VINA_PATH env var.
+  vina_path: vina
+  exhaustiveness: 8
+  num_modes: 9

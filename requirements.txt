@@ -1,0 +1,23 @@
+# Core scientific / ML stack (already present in the detected global Python
+# 3.12 environment; pinned here to the versions this project was developed
+# and tested against).
+numpy==2.4.6
+pandas==3.0.5
+rdkit==2026.3.5
+torch==2.13.0
+scikit-learn==1.9.0
+
+# Project-specific additions installed into .venv
+matplotlib==3.11.1
+networkx==3.6.1
+meeko==0.7.1
+PyYAML==6.0.3
+tqdm==4.68.4
+
+# Testing
+pytest==9.1.1
+
+# NOT installed / not pip-installable on Windows -- see README.md:
+#   vina            (AutoDock Vina Python bindings; no Windows wheel, needs Boost to build from source)
+# AutoDock Vina itself must be installed separately as a standalone executable:
+#   https://github.com/ccsb-scripps/AutoDock-Vina/releases
